@@ -26,6 +26,8 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 	TextureRegion walkFrames[] = new TextureRegion[2];
 	String fs = System.getProperty("file.separator");
 	Animation<TextureRegion> walkAnimation;
+	TextureRegion currentFrame;
+	SpriteBatch spriteBatch;
 	
 	@Override
 	public void create () {
@@ -33,27 +35,29 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		float w = Gdx.graphics.getWidth();
 		float h = Gdx.graphics.getHeight();
 
-		Texture walkSheet = new Texture(Gdx.files.internal( "." +fs + "Characters" + fs +"Roboter" + fs + "png" + fs + "Objects" +fs+ "Run1.png"));
+		Texture walkSheet = new Texture(Gdx.files.internal( "."+fs + "Characters" + fs +"Roboter" + fs + "png" + fs+ "Run1.png"));
 		TextureRegion[][] tmp1 = TextureRegion.split(walkSheet,
 				walkSheet.getWidth() / 1,
 				walkSheet.getHeight() / 1);
 
-		Texture walkSheet2 = new Texture(Gdx.files.internal( "." +fs + "Characters" + fs +"Roboter" + fs + "png" + fs + "Objects" +fs+ "Run2.png"));
-		TextureRegion[][] tmp2 = TextureRegion.split(walkSheet,
-				walkSheet.getWidth() / 1,
-				walkSheet.getHeight() / 1);
+		Texture walkSheet2 = new Texture(Gdx.files.internal( "."+fs + "Characters" + fs +"Roboter" + fs + "png" + fs+ "Run2.png"));
+		TextureRegion[][] tmp2 = TextureRegion.split(walkSheet2,
+				walkSheet2.getWidth() / 1,
+				walkSheet2.getHeight() / 1);
 
 
-		walkFrames[0]=tmp1[1][0];
-		walkFrames[0]=tmp2[1][0];
+		walkFrames[0]=tmp1[0][0];
+		walkFrames[1]=tmp2[0][0];
 
 		walkAnimation = new Animation<TextureRegion>(0.15f, walkFrames);
 
-		batch = new SpriteBatch();
+		spriteBatch = new SpriteBatch();
+		stateTime = 0f;
+
 //		img = new Texture("Wueste14_sehrklein.tmx");
 
 		camera = new OrthographicCamera();
-		camera.setToOrtho(false,w,h);
+		camera.setToOrtho(false,1000,700);
 		camera.update();
 		tiledMap = new TmxMapLoader().load("Map/Map1.tmx");
 		tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
@@ -77,9 +81,10 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 
 //		Gdx.gl.glClearColor(1, 0, 0, 1);
 //		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-//		batch.begin();
-//		batch.draw(img, 0, 0);
-//		batch.end();
+		currentFrame = walkAnimation.getKeyFrame(stateTime, true);
+		spriteBatch.begin();
+		spriteBatch.draw(currentFrame, 10, 200, 100, 100); // Draw current frame at (8, 7)
+		spriteBatch.end();
 	}
 	
 	@Override
