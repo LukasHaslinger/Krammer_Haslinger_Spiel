@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -16,81 +17,74 @@ import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 
 public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
-	SpriteBatch batch;
-	Texture img;
 
 	OrthographicCamera camera;
 	TiledMap tiledMap;
 	TiledMapRenderer tiledMapRenderer;
-	float stateTime;
-	TextureRegion walkFrames[] = new TextureRegion[2];
 	String fs = System.getProperty("file.separator");
-	Animation<TextureRegion> walkAnimation;
-	TextureRegion currentFrame;
 	SpriteBatch spriteBatch;
-	
+	public static float characterSpeed = 200.0f; // 10 pixels per second.
+	public static float characterX = 0;
+	public static float characterY = 200;
+	Player player;
+	Movement mov;
+
 	@Override
 	public void create () {
 
-		float w = Gdx.graphics.getWidth();
-		float h = Gdx.graphics.getHeight();
-
-		Texture walkSheet = new Texture(Gdx.files.internal( "."+fs + "Characters" + fs +"Roboter" + fs + "png" + fs+ "Run1.png"));
-		TextureRegion[][] tmp1 = TextureRegion.split(walkSheet,
-				walkSheet.getWidth() / 1,
-				walkSheet.getHeight() / 1);
-
-		Texture walkSheet2 = new Texture(Gdx.files.internal( "."+fs + "Characters" + fs +"Roboter" + fs + "png" + fs+ "Run2.png"));
-		TextureRegion[][] tmp2 = TextureRegion.split(walkSheet2,
-				walkSheet2.getWidth() / 1,
-				walkSheet2.getHeight() / 1);
-
-
-		walkFrames[0]=tmp1[0][0];
-		walkFrames[1]=tmp2[0][0];
-
-		walkAnimation = new Animation<TextureRegion>(0.15f, walkFrames);
-
 		spriteBatch = new SpriteBatch();
-		stateTime = 0f;
-
-//		img = new Texture("Wueste14_sehrklein.tmx");
-
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false,1000,700);
-		camera.update();
+
+		//Map laden
 		tiledMap = new TmxMapLoader().load("Map/Map1.tmx");
 		tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
 		Gdx.input.setInputProcessor(this);
 
+		//Objecterzeugung
+		player = new Player();
+		mov = new Movement();
 
 	}
 
 	@Override
 	public void render () {
 
+//		if(Gdx.input.isKeyPressed(Input.Keys.A))
+//			characterX -= Gdx.graphics.getDeltaTime() * characterSpeed;
+//		if(Gdx.input.isKeyPressed(Input.Keys.D))
+//			characterX += Gdx.graphics.getDeltaTime() * characterSpeed;
+//		if(Gdx.input.isKeyPressed(Input.Keys.W))
+//			characterY += Gdx.graphics.getDeltaTime() * characterSpeed;
+//		if(Gdx.input.isKeyPressed(Input.Keys.S))
+//			characterY -= Gdx.graphics.getDeltaTime() * characterSpeed;
+//		// Jumping
+//		if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) {
+//			characterY +=Gdx.graphics.getDeltaTime() + 7;
+//		}
+
 		Gdx.gl.glClearColor(0, 0, 0, 1);
-		Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+		//Show the map
 		camera.update();
 		tiledMapRenderer.setView(camera);
 		tiledMapRenderer.render();
 
-		//Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT); // Clear screen
-		stateTime += Gdx.graphics.getDeltaTime();
+		//updates
+		mov.update();
+		player.update(characterSpeed);
 
-//		Gdx.gl.glClearColor(1, 0, 0, 1);
-//		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		currentFrame = walkAnimation.getKeyFrame(stateTime, true);
+		//rendering
 		spriteBatch.begin();
-		spriteBatch.draw(currentFrame, 10, 200, 100, 100); // Draw current frame at (8, 7)
+		player.render(spriteBatch);
 		spriteBatch.end();
 	}
 	
 	@Override
 	public void dispose () {
-		batch.dispose();
-		img.dispose();
+//		batch.dispose();
+//		img.dispose();
 	}
 
 	@Override
@@ -100,18 +94,6 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 
 	@Override
 	public boolean keyUp(int keycode) {
-		if(keycode == Input.Keys.A)
-			camera.translate(-32,0);
-		if(keycode == Input.Keys.D)
-			camera.translate(32,0);
-		if(keycode == Input.Keys.S)
-			camera.translate(0,-32);
-		if(keycode == Input.Keys.W)
-			camera.translate(0,32);
-		if(keycode == Input.Keys.Q)
-			camera.zoom += 0.02;
-		if(keycode == Input.Keys.E)
-			camera.zoom -= 0.02;
 
 		return false;
 	}
