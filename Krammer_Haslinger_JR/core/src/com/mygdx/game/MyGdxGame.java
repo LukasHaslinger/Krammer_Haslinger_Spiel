@@ -7,7 +7,9 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapRenderer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
@@ -21,22 +23,43 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 	TiledMap tiledMap;
 	TiledMapRenderer tiledMapRenderer;
 	float stateTime;
+	TextureRegion walkFrames[] = new TextureRegion[2];
+	String fs = System.getProperty("file.separator");
+	Animation<TextureRegion> walkAnimation;
 	
 	@Override
 	public void create () {
 
 		float w = Gdx.graphics.getWidth();
 		float h = Gdx.graphics.getHeight();
-//
+
+		Texture walkSheet = new Texture(Gdx.files.internal( "." +fs + "Characters" + fs +"Roboter" + fs + "png" + fs + "Objects" +fs+ "Run1.png"));
+		TextureRegion[][] tmp1 = TextureRegion.split(walkSheet,
+				walkSheet.getWidth() / 1,
+				walkSheet.getHeight() / 1);
+
+		Texture walkSheet2 = new Texture(Gdx.files.internal( "." +fs + "Characters" + fs +"Roboter" + fs + "png" + fs + "Objects" +fs+ "Run2.png"));
+		TextureRegion[][] tmp2 = TextureRegion.split(walkSheet,
+				walkSheet.getWidth() / 1,
+				walkSheet.getHeight() / 1);
+
+
+		walkFrames[0]=tmp1[1][0];
+		walkFrames[0]=tmp2[1][0];
+
+		walkAnimation = new Animation<TextureRegion>(0.15f, walkFrames);
+
 		batch = new SpriteBatch();
 //		img = new Texture("Wueste14_sehrklein.tmx");
 
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false,w,h);
 		camera.update();
-		tiledMap = new TmxMapLoader().load("Map/Scifi.tmx");
+		tiledMap = new TmxMapLoader().load("Map/Map1.tmx");
 		tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
 		Gdx.input.setInputProcessor(this);
+
+
 	}
 
 	@Override
@@ -76,10 +99,10 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 			camera.translate(-32,0);
 		if(keycode == Input.Keys.D)
 			camera.translate(32,0);
-		//if(keycode == Input.Keys.S)
-		//camera.translate(0,-32);
-		//if(keycode == Input.Keys.W)
-		//camera.translate(0,32);
+		if(keycode == Input.Keys.S)
+			camera.translate(0,-32);
+		if(keycode == Input.Keys.W)
+			camera.translate(0,32);
 		if(keycode == Input.Keys.Q)
 			camera.zoom += 0.02;
 		if(keycode == Input.Keys.E)
