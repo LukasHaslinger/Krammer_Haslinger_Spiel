@@ -13,6 +13,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapRenderer;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 
@@ -21,13 +22,16 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 	OrthographicCamera camera;
 	TiledMap tiledMap;
 	TiledMapRenderer tiledMapRenderer;
-	String fs = System.getProperty("file.separator");
 	SpriteBatch spriteBatch;
 	public static float characterSpeed = 200.0f; // 10 pixels per second.
 	public static float characterX = 0;
 	public static float characterY = 200;
 	Player player;
 	Movement mov;
+	float delta;
+	private TiledMap collisionMap;
+	private OrthogonalTiledMapRenderer collisionMapRenderer;
+	private TiledMapTileLayer collisionLayer;
 
 	@Override
 	public void create () {
@@ -41,6 +45,11 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
 		Gdx.input.setInputProcessor(this);
 
+		collisionMap = new TmxMapLoader().load("Map/Map1.tmx");
+		collisionMapRenderer = new OrthogonalTiledMapRenderer(collisionMap);
+		collisionLayer = (TiledMapTileLayer) collisionMap.getLayers().get(
+				"Boden");
+
 		//Objecterzeugung
 		player = new Player();
 		mov = new Movement();
@@ -50,26 +59,17 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 	@Override
 	public void render () {
 
-//		if(Gdx.input.isKeyPressed(Input.Keys.A))
-//			characterX -= Gdx.graphics.getDeltaTime() * characterSpeed;
-//		if(Gdx.input.isKeyPressed(Input.Keys.D))
-//			characterX += Gdx.graphics.getDeltaTime() * characterSpeed;
-//		if(Gdx.input.isKeyPressed(Input.Keys.W))
-//			characterY += Gdx.graphics.getDeltaTime() * characterSpeed;
-//		if(Gdx.input.isKeyPressed(Input.Keys.S))
-//			characterY -= Gdx.graphics.getDeltaTime() * characterSpeed;
-//		// Jumping
-//		if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) {
-//			characterY +=Gdx.graphics.getDeltaTime() + 7;
-//		}
-
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+		delta = Gdx.graphics.getDeltaTime();
 
 		//Show the map
 		camera.update();
 		tiledMapRenderer.setView(camera);
 		tiledMapRenderer.render();
+		collisionMapRenderer.setView(camera);
+		collisionMapRenderer.render();
 
 		//updates
 		mov.update();
@@ -79,6 +79,14 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		spriteBatch.begin();
 		player.render(spriteBatch);
 		spriteBatch.end();
+
+		//Map moves automatically
+		camera.translate(100 * delta,0,0);
+		camera.update();
+
+		collisionMapRenderer.getBatch().begin();
+      	collisionMapRenderer.renderTileLayer(collisionLayer);
+      	collisionMapRenderer.getBatch().end();
 	}
 	
 	@Override

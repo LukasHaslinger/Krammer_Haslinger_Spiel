@@ -45,7 +45,7 @@ public class Player {
         stateTime += Gdx.graphics.getDeltaTime();
         currentFrame = walkAnimation.getKeyFrame(stateTime, true);
 
-        sb.draw(currentFrame, characterX, characterY, 130, 130);
+        sb.draw(currentFrame, characterX, characterY, 80, 80);
     }
 
     public void loadPlayerTextures(){
