@@ -6,10 +6,10 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 
 import static com.mygdx.game.Movement.*;
-import static com.mygdx.game.MyGdxGame.characterX;
-import static com.mygdx.game.MyGdxGame.characterY;
+import static com.mygdx.game.MyGdxGame.*;
 
 /**
  * Created by Lukas on 29.04.2019.
@@ -22,8 +22,11 @@ public class Player {
     Animation<TextureRegion> walkAnimation;
     TextureRegion currentFrame;
     float stateTime;
+    private TiledMapTileLayer collisionLayer;
 
-    public Player() {
+    public Player(TiledMapTileLayer collisionLayer) {
+
+        this.collisionLayer = collisionLayer;
         loadPlayerTextures();
     }
 
@@ -38,7 +41,11 @@ public class Player {
 		if(DOWN)
 			characterY -= Gdx.graphics.getDeltaTime() * characterSpeed;
 
+        checkCollisionMap();
+
     }
+
+
 
     public void render (SpriteBatch sb){
 
@@ -62,6 +69,29 @@ public class Player {
 
         walkAnimation = new Animation<TextureRegion>(0.15f, walkFrames);
         stateTime = 0f;
+    }
+    public void checkCollisionMap(){
+        float xWorld = characterX + SCROLLTRACKER_X;
+        float yWorld = characterY + SCROLLTRACKER_Y;
+
+        ////////////////// Check For Collision
+        boolean collisionWithMap = false;
+        // check right side middle
+        collisionWithMap = isCellBLocked(xWorld, yWorld);
+
+        // //////////////// React to Collision
+        if (collisionWithMap) {
+            System.out.println("player-map collision!!!");
+        }
+    }
+
+    public boolean isCellBLocked(float x, float y) {
+        TiledMapTileLayer.Cell cell = collisionLayer.getCell(
+                (int) (x / collisionLayer.getTileWidth()),
+                (int) (y / collisionLayer.getTileHeight()));
+
+        return cell != null && cell.getTile() != null
+                && cell.getTile().getProperties().containsKey("blocked");
     }
 }
 

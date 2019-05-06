@@ -24,8 +24,10 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 	TiledMapRenderer tiledMapRenderer;
 	SpriteBatch spriteBatch;
 	public static float characterSpeed = 200.0f; // 10 pixels per second.
-	public static float characterX = 0;
-	public static float characterY = 200;
+	public static float characterX = 0; //0
+	public static float characterY = 200; //200
+	public static float SCROLLTRACKER_X;
+	public static float SCROLLTRACKER_Y;
 	Player player;
 	Movement mov;
 	float delta;
@@ -45,13 +47,13 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
 		Gdx.input.setInputProcessor(this);
 
-		collisionMap = new TmxMapLoader().load("Map/Map1.tmx");
+		//CollisionMap
+		collisionMap = new TmxMapLoader().load("Map/CollisionMap1.tmx");
 		collisionMapRenderer = new OrthogonalTiledMapRenderer(collisionMap);
-		collisionLayer = (TiledMapTileLayer) collisionMap.getLayers().get(
-				"Boden");
+		collisionLayer = (TiledMapTileLayer) collisionMap.getLayers().get("collision");
 
 		//Objecterzeugung
-		player = new Player();
+		player = new Player(collisionLayer);
 		mov = new Movement();
 
 	}
@@ -79,15 +81,26 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		spriteBatch.begin();
 		player.render(spriteBatch);
 		spriteBatch.end();
+		//Collision rendering - Wenn nicht auskommentiert verschwindet figur hinter boden
+		//collisionMapRenderer.setView(camera);
+		//collisionMapRenderer.render();
 
-		//Map moves automatically
-		camera.translate(100 * delta,0,0);
+		//CollisionLayer spezific Layer
+		//collisionMapRenderer.getBatch().begin();
+      	//collisionMapRenderer.renderTileLayer(collisionLayer);
+      	//collisionMapRenderer.getBatch().end();
+
+		//Cam moves automatically
+		//camera.translate(100 * delta,0,0);
+		//camera.update();
+
+
+		//Cam follows palyer
+		camera.position.x = Gdx.graphics.getDeltaTime() * characterSpeed + characterX; //characterX+500
 		camera.update();
-
-		collisionMapRenderer.getBatch().begin();
-      	collisionMapRenderer.renderTileLayer(collisionLayer);
-      	collisionMapRenderer.getBatch().end();
 	}
+
+
 	
 	@Override
 	public void dispose () {
