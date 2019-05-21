@@ -17,6 +17,9 @@ import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 
+import static com.mygdx.game.Movement.DOWN;
+import static com.mygdx.game.Movement.UP;
+
 public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 
 	OrthographicCamera camera;
@@ -26,8 +29,6 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 	public static float characterSpeed = 200.0f; // 10 pixels per second.
 	public static float characterX = 0; //0
 	public static float characterY = 200; //200
-	public static float SCROLLTRACKER_X;
-	public static float SCROLLTRACKER_Y;
 	Player player;
 	Movement mov;
 	float delta;
@@ -67,11 +68,10 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		delta = Gdx.graphics.getDeltaTime();
 
 		//Show the map
-		camera.update();
 		tiledMapRenderer.setView(camera);
 		tiledMapRenderer.render();
-		collisionMapRenderer.setView(camera);
-		collisionMapRenderer.render();
+//		collisionMapRenderer.setView(camera);
+//		collisionMapRenderer.render();
 
 		//updates
 		mov.update();
@@ -81,14 +81,10 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		spriteBatch.begin();
 		player.render(spriteBatch);
 		spriteBatch.end();
-		//Collision rendering - Wenn nicht auskommentiert verschwindet figur hinter boden
-		//collisionMapRenderer.setView(camera);
-		//collisionMapRenderer.render();
 
-		//CollisionLayer spezific Layer
-		//collisionMapRenderer.getBatch().begin();
-      	//collisionMapRenderer.renderTileLayer(collisionLayer);
-      	//collisionMapRenderer.getBatch().end();
+		//Collision rendering
+		collisionMapRenderer.setView(camera);
+		collisionMapRenderer.render();
 
 		//Cam moves automatically
 		//camera.translate(100 * delta,0,0);
@@ -96,11 +92,9 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 
 
 		//Cam follows palyer
-		camera.position.x = Gdx.graphics.getDeltaTime() * characterSpeed + characterX; //characterX+500
+		camera.position.x = /*Gdx.graphics.getDeltaTime() * characterSpeed +*/ characterX+500; //characterX+500
 		camera.update();
 	}
-
-
 	
 	@Override
 	public void dispose () {

@@ -71,15 +71,15 @@ public class Player {
         stateTime = 0f;
     }
     public void checkCollisionMap(){
-        float xWorld = characterX + SCROLLTRACKER_X;
-        float yWorld = characterY + SCROLLTRACKER_Y;
+        float xWorld = characterX; //+ SCROLLTRACKER_X;
+        float yWorld = characterY; //+ SCROLLTRACKER_Y;
 
-        ////////////////// Check For Collision
+        //Check For Collision
         boolean collisionWithMap = false;
         // check right side middle
         collisionWithMap = isCellBLocked(xWorld, yWorld);
 
-        // //////////////// React to Collision
+        //React to Collision
         if (collisionWithMap) {
             System.out.println("player-map collision!!!");
         }
@@ -90,9 +90,9 @@ public class Player {
                 (int) (x / collisionLayer.getTileWidth()),
                 (int) (y / collisionLayer.getTileHeight()));
 
-        return cell != null && cell.getTile() != null
-                && cell.getTile().getProperties().containsKey("blocked");
+        return cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey("blocked");
     }
+
 }
 
 
