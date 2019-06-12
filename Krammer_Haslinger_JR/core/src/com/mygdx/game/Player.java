@@ -71,8 +71,8 @@ public class Player {
         stateTime = 0f;
     }
     public void checkCollisionMap(){
-        float xWorld = characterX; //+ SCROLLTRACKER_X;
-        float yWorld = characterY; //+ SCROLLTRACKER_Y;
+        float xWorld = characterX; //characterX+ SCROLLTRACKER_X;
+        float yWorld = characterY; //characterY+ SCROLLTRACKER_Y;
 
         //Check For Collision
         boolean collisionWithMap = false;
