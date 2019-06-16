@@ -15,6 +15,7 @@ public class Movement {
     public static boolean DOWN;
     public static boolean LEFT;
     public static boolean RIGHT;
+    public static boolean JUMP;
 
     public void update(){
 
@@ -22,19 +23,22 @@ public class Movement {
         DOWN= false;
         LEFT = false;
         RIGHT = false;
-
+        JUMP = false;
         // set boolean to true if key is touched
         if (Gdx.input.isKeyPressed(Input.Keys.A)) {
             LEFT = true;
         }
         if (Gdx.input.isKeyPressed(Input.Keys.S)) {
-            DOWN = true;
+           DOWN = true;
         }
         if (Gdx.input.isKeyPressed(Input.Keys.D)) {
             RIGHT = true;
         }
         if (Gdx.input.isKeyPressed(Input.Keys.W)) {
-            UP = true;
+           UP = true;
+        }
+        if (Gdx.input.isKeyPressed(Input.Keys.SPACE)) {
+            JUMP = true;
         }
 
     }

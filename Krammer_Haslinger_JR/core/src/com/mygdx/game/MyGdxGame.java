@@ -20,8 +20,12 @@ import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import static com.mygdx.game.Movement.DOWN;
 import static com.mygdx.game.Movement.UP;
 
+
+
 public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 
+	public static float SCROLLTRACKER_X;
+	public static float SCROLLTRACKER_Y;
 	OrthographicCamera camera;
 	TiledMap tiledMap;
 	TiledMapRenderer tiledMapRenderer;
@@ -49,9 +53,9 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		Gdx.input.setInputProcessor(this);
 
 		//CollisionMap
-		collisionMap = new TmxMapLoader().load("Map/CollisionMap1.tmx");
+		collisionMap = new TmxMapLoader().load("Map/CollisionMap_neu.tmx");
 		collisionMapRenderer = new OrthogonalTiledMapRenderer(collisionMap);
-		collisionLayer = (TiledMapTileLayer) collisionMap.getLayers().get("collision");
+		collisionLayer = (TiledMapTileLayer) collisionMap.getLayers().get("Collision");
 
 		//Objecterzeugung
 		player = new Player(collisionLayer);
@@ -67,11 +71,14 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 
 		delta = Gdx.graphics.getDeltaTime();
 
+		//Collision rendering
+		//mit "show the map" tauschen um sichtbar zu machen
+		collisionMapRenderer.setView(camera);
+		collisionMapRenderer.render();
+
 		//Show the map
 		tiledMapRenderer.setView(camera);
 		tiledMapRenderer.render();
-//		collisionMapRenderer.setView(camera);
-//		collisionMapRenderer.render();
 
 		//updates
 		mov.update();
@@ -82,17 +89,17 @@ public class MyGdxGame extends ApplicationAdapter implements InputProcessor {
 		player.render(spriteBatch);
 		spriteBatch.end();
 
-		//Collision rendering
-		collisionMapRenderer.setView(camera);
-		collisionMapRenderer.render();
-
 		//Cam moves automatically
-		//camera.translate(100 * delta,0,0);
+		//camera.translate(200 * delta,0,0);
 		//camera.update();
 
 
 		//Cam follows palyer
-		camera.position.x = /*Gdx.graphics.getDeltaTime() * characterSpeed +*/ characterX+500; //characterX+500
+		//camera.position.x= characterX+500;
+		//camera.translate(characterX,0);
+		float scrollSpeed = 150 * delta;
+		camera.translate(scrollSpeed, 0, 0);
+		SCROLLTRACKER_X += scrollSpeed;
 		camera.update();
 	}
 	
