@@ -95,14 +95,12 @@ public class MyGdxGame extends Game implements InputProcessor {
 		player.render(spriteBatch);
 		spriteBatch.end();
 
-		//Cam moves automatically
-		//camera.translate(200 * delta,0,0);
-		//camera.update();
-
 
 		//Cam follows palyer
 		//camera.position.x= characterX+500;
 		//camera.translate(characterX,0);
+
+		//Cam moves Automatically
 		float scrollSpeed = 150 * delta;
 		camera.translate(scrollSpeed, 0, 0);
 		SCROLLTRACKER_X += scrollSpeed;
