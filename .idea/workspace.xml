@@ -1,9 +1,340 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39a6de93-7423-48c7-8c06-66bc0172fa5c" name="Default" comment="" />
+    <list default="true" id="39a6de93-7423-48c7-8c06-66bc0172fa5c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/cache.properties.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/fileSnapshots.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.1/taskArtifacts/taskArtifacts.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Krammer_Haslinger_Spiel.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Buttons/Button.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Buttons/Button.cdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Buttons/Button.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Buttons/Button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Buttons/medievalbutton.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/freedinosprite.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Dead (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Dead (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Dead (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Dead (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Dead (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Dead (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Dead (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Dead (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Idle (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Jump (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Run (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Run (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Run (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Run (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Run (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Run (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Run (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Run (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Dino/png/Walk (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Dead (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Idle (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Jump (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpMelee (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpMelee (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpMelee (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpMelee (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpMelee (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpMelee (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpMelee (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpMelee (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpShoot (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpShoot (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpShoot (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpShoot (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/JumpShoot (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Melee (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Melee (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Melee (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Melee (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Melee (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Melee (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Melee (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Melee (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Bullet_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Bullet_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Bullet_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Bullet_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Bullet_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Muzzle_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Muzzle_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Muzzle_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Muzzle_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Objects/Muzzle_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Run (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Run (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Run (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Run (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Run (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Run (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Run (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Run (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/RunShoot (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/RunShoot (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/RunShoot (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/RunShoot (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/RunShoot (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/RunShoot (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/RunShoot (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/RunShoot (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/RunShoot (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Shoot (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Shoot (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Shoot (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Shoot (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/png/Slide (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figuren/Roboter/robotfree.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Krammer_Haslinger_Konzept_JumpAndRun.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maps/Wueste14_sehrklein.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/Tile14.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/freescifiplatform.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Objects/Barrel (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Objects/Barrel (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Objects/Box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Objects/DoorLocked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Objects/DoorOpen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Objects/DoorUnlocked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Objects/Saw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Objects/Switch (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Objects/Switch (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Acid (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Acid (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/BGTile (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/BGTile (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/BGTile (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/BGTile (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/BGTile (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/BGTile (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/BGTile (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Fence (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Fence (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Fence (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Spike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/png/Tiles/Tile (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/vector/Tile.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/vector/Tile.cdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/vector/Tile.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SienceFictionTileset/vector/Tile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/Tile14.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/ai/Sample.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/ai/Tile.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/cdr/Backup_of_Preview.cdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/cdr/Backup_of_Tile.cdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/cdr/Preview.cdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/cdr/Tile.cdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/eps/Sample.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/eps/Tile.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/freetileset.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/BG/BG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Bush (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Bush (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Bush (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Bush (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Mushroom_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Mushroom_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Sign_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Sign_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Tree_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Tree_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Object/Tree_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/png/Tiles/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/svg/Sample.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SommerMapTileset/svg/Tile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/ai/Sample.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/ai/Tile.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/cdr/Tile.cdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/eps/Sample.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/eps/Tile.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/BG/BG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/Crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/Crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/IceBox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/Igloo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/Sign_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/Sign_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/SnowMan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/Stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/Tree_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Object/Tree_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/png/Tiles/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/svg/Sample.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/svg/Tile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WinterMap_Tileset/wintertileset.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/Tile_Wueste_14.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/Tile_Wueste_BG_14.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/ai/BG.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/ai/Tile.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/cdr/Tile.cdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/deserttileset.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/eps/BG.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/eps/Tile.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/BG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Bush (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Bush (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Cactus (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Cactus (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Cactus (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Grass (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Grass (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Sign.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/SignArrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Skeleton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/StoneBlock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Objects/Tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/png/Tile/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/svg/BG.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/svg/Tile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WüsteTileset/tileSet.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,46 +343,72 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1447406916">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="Krammer_Haslinger_Spiel" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="availableProjects">
-      <map>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="Krammer_Haslinger_Spiel" />
-              <option name="path" value="$PROJECT_DIR$" />
-            </ExternalProjectPojo>
-          </key>
-          <value>
-            <list>
-              <ExternalProjectPojo>
-                <option name="name" value="Krammer_Haslinger_Spiel" />
-                <option name="path" value="$PROJECT_DIR$" />
-              </ExternalProjectPojo>
-            </list>
-          </value>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Krammer_Haslinger_JR/desktop/src/com/mygdx/game/desktop/DesktopLauncher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
-      </map>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map />
+    </option>
+    <option name="myGradleVersions">
+      <map />
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/Krammer_Haslinger_JumpAndRun" value="3099740896605" />
         <entry key="$PROJECT_DIR$/../libGdx" value="3086429209409" />
         <entry key="$PROJECT_DIR$/../libGdx/Programme" value="3086463506834" />
         <entry key="$PROJECT_DIR$/../libGdx/libGDXTest" value="3084182573537" />
       </map>
-    </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -60,145 +417,154 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Krammer_Haslinger_Spiel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Krammer_Haslinger_Spiel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="Krammer_Haslinger_Spiel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Krammer_Haslinger_Spiel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Krammer_Haslinger_Spiel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Krammer_Haslinger_Spiel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Krammer_Haslinger_JR" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Krammer_Haslinger_Spiel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Krammer_Haslinger_Spiel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Krammer_Haslinger_JR" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Krammer_Haslinger_Spiel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Krammer_Haslinger_Spiel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Krammer_Haslinger_JR" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Krammer_Haslinger_Spiel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Krammer_Haslinger_Spiel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Krammer_Haslinger_JR" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Krammer_Haslinger_Spiel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Krammer_Haslinger_Spiel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Krammer_Haslinger_JR" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mygdx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Krammer_Haslinger_Spiel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Krammer_Haslinger_Spiel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Krammer_Haslinger_JR" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mygdx" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Krammer_Haslinger_Spiel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Krammer_Haslinger_Spiel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Krammer_Haslinger_JR" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="mygdx" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Krammer_Haslinger_Spiel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Krammer_Haslinger_Spiel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="PlatformerTileset" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../4BHIT_repo/4bhit-1819-MarioKrammer/25_02_FX_Chat" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -208,55 +574,72 @@
       <option name="presentableId" value="Default" />
       <updated>1551078856589</updated>
       <workItem from="1551078858143" duration="15000" />
+      <workItem from="1554099323414" duration="72000" />
+      <workItem from="1554705095716" duration="67000" />
+      <workItem from="1554716649571" duration="34000" />
+      <workItem from="1556518154100" duration="1770000" />
+      <workItem from="1556527845194" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15000" />
+    <option name="totallyTimeSpent" value="1978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26912752" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Properties" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Krammer_Haslinger_JumpAndRun/core/src/com/mygdx/game/MyGdxGame.java" />
+    <entry file="file://$PROJECT_DIR$/Krammer_Haslinger_JumpAndRun/desktop/src/com/mygdx/game/desktop/DesktopLauncher.java" />
+    <entry file="file://$PROJECT_DIR$/Krammer_Haslinger_JR/desktop/src/com/mygdx/game/desktop/DesktopLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
